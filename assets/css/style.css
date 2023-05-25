@@ -23,37 +23,66 @@ html {
 }
 
 /* -----Navigation: nav*/
-#nav {}
+#nav,
+#subnav {
+    list-style: none;
+}
 
 #nav li {
     display: inline-block;
-    padding: 0px 24px;
+    cursor: pointer;
+    position: relative;
+}
+
+#nav>li>a {
+    color: var(--color-text-nav);
+    text-transform: uppercase;
 }
 
 #nav li a {
     line-height: 46.5px;
-    color: var(--color-text-nav);
+    padding: 0px 24px;
     text-decoration: none;
-    text-transform: uppercase;
     font-size: 15px;
     font-weight: 600;
     display: inline-block;
 }
 
-#nav li:hover {
-    background: #cecece;
-}
-#nav li:hover a {
+
+#nav>li:hover>a,
+#nav #subnav>li:hover>a {
     color: #000;
+    background: #cecece;
 }
 
 /* -----Navigation: subnav*/
 #nav #subnav {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 0 10px rgb(187, 187, 187);
+}
+#nav>li:hover #subnav {
+    display: block;
+}
+
+
+#nav #subnav li {
+    width: 100%;
+}
+
+#nav #subnav a {
+    color: #000;
+    padding: 0 16px;
+    line-height: 38px;
+    min-width: 160px;
 }
 
 /* Process slider */
-#slider {}
+#slider {
+}
 
 /* Process content */
 #content {}
