@@ -23,6 +23,10 @@ html {
 }
 
 /* -----Navigation: nav*/
+#nav {
+    display: inline-block;
+}
+
 #nav,
 #subnav {
     list-style: none;
@@ -48,6 +52,9 @@ html {
     display: inline-block;
 }
 
+#nav .nav-arow-down {
+    font-size: 12px;
+}
 
 #nav>li:hover>a,
 #nav #subnav>li:hover>a {
@@ -64,6 +71,7 @@ html {
     background: #fff;
     box-shadow: 0 0 10px rgb(187, 187, 187);
 }
+
 #nav>li:hover #subnav {
     display: block;
 }
@@ -80,9 +88,26 @@ html {
     min-width: 160px;
 }
 
-/* Process slider */
-#slider {
+/* -------Seach button */
+#header .search-btn {
+    float: right;
 }
+
+#header .search-icon {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 46.5px;
+    padding: 0 24px;
+}
+
+#header .search-btn:hover {
+    background: #f44336;
+    cursor: pointer;
+}
+
+/* Process slider */
+#slider {}
 
 /* Process content */
 #content {}
