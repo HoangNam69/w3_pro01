@@ -18,6 +18,14 @@ html {
 
 /* Process header */
 #header {
+    position: fixed;
+    /*Khi su dung position thì tính kế thừa lại 
+    độ rộng màn hình của heade dạng block sẽ bị mất đi*/
+    top: 0;
+    left: 0;
+    /* Có 2 cách xư lý độ rộng của header như sau: */
+    /* right: 0; */
+    width: 100%;
     height: 46.5px;
     background: black;
 }
@@ -107,7 +115,9 @@ html {
 }
 
 /* Process slider */
-#slider {}
+#slider {
+    margin-top: 46.5px;
+}
 
 /* Process content */
 #content {}
