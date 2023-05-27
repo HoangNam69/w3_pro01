@@ -28,6 +28,7 @@ html {
     width: 100%;
     height: 46.5px;
     background: black;
+    z-index: 1;
 }
 
 /* -----Navigation: nav*/
@@ -117,7 +118,31 @@ html {
 /* Process slider */
 #slider {
     margin-top: 46.5px;
+    padding-top: 50%;
+    background: url(/assets/img/slider/slider01.jpg) center / cover no-repeat;
+    position: relative;
 }
+#slider .text-content {
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    /* Căn giữa */
+    /* left: 50%;
+    transform: translateX(-50%); */
+    width: 100%;
+    text-align: center;
+    padding: 32px 0;
+}
+#slider .text-heading {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#slider .text-description {
+    margin-top: 25px;
+    font-size: 15px;
+}
+
 
 /* Process content */
 #content {}
