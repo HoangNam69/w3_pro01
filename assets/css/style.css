@@ -18,6 +18,10 @@
     clear: both;
 }
 
+.open {
+    display: flex !important;
+}
+
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -287,13 +291,15 @@ html {
     text-decoration: none;
     color: #fff;
     text-align: center;
-    overflow: hidden;
     display: inline-block;
+    outline: none;
+    border: none;
 }
 
 #content .place-buy-btn:hover {
     background: #ccc;
     color: #000;
+    cursor: pointer;
 }
 
 
@@ -318,6 +324,7 @@ html {
     width: 900px;
     margin: 0 auto;
     position: relative;
+    animation: modalFadeIn ease-in-out .4s;
 }
 
 .modal-header {
@@ -441,4 +448,16 @@ html {
 
 .modal-footer .modal-help a {
     color: #2196F3;
+}
+
+/* Xử lý hiệu ứng mở modal. Modal chuyển động từ trên xuống */
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
