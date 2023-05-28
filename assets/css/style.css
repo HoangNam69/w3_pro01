@@ -302,9 +302,114 @@ html {
     cursor: pointer;
 }
 
+/* Contact */
+#content .contact-container {
+    display: flex;
+    padding: 32px 0;
+}
+
+#content .contact-col {
+    width: 50%;
+}
+
+#content .contact-col:nth-child(1) {
+    font-size: 18px;
+}
+
+#content .contact-col:nth-child(1) p {
+    padding-bottom: 8px;
+}
+
+#content .contact-form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    gap: 10px;
+}
+
+#content .contact-form-row:nth-child(3) {
+    display: flex;
+    justify-content: end;
+}
+
+#content .contact-col input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+#content .contact-form-email,
+#content .contact-form-name {
+    width: 100%;
+}
+
+#content .contact-form-message {
+    width: 100%;
+}
+
+#content .contact-submit-btn {
+    padding: 8px 16px;
+    margin: 16px 0;
+    border: none;
+    background: #000;
+    color: #fff;
+    font-size: 15px;
+}
+
+#content .contact-submit-btn:hover {
+    background: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Images */
+#content .map-section {
+    width: 100%;
+    position: relative;
+}
+
+#content .map-img {
+    width: 100%;
+}
+
+#content .map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(17, 27, 32, 0.151);
+}
 
 /* Process footer */
-#footer {}
+#footer {
+    padding: 64px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    color: #757575;
+}
+
+#footer .brand-footer {
+    font-size: 30px;
+    display: flex;
+}
+
+#footer .brand-footer i:hover {
+    color: #afadad;
+    cursor: pointer;
+}
+
+#footer .cre-footer {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+#footer .cre-footer>a {
+    font-size: 15px;
+    color: #757575;
+}
 
 /* Modal tickets */
 .modal {
@@ -456,6 +561,7 @@ html {
         opacity: 0;
         transform: translateY(-150px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
