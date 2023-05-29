@@ -10,6 +10,7 @@
     box-sizing: border-box;
 }
 
+/* common */
 .text-white {
     color: #fff !important;
 }
@@ -23,9 +24,12 @@
 }
 
 html {
+    scroll-behavior: smooth;
+    /*Xử lý hành vi cuộn trang một cách mượt mà*/
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* main */
 #main {}
 
 /* Process header */
