@@ -1,0 +1,114 @@
+/* PC */
+@media (min-width:1024px) {}
+
+/* Tablet */
+@media (min-width:740px) and (max-width:1023px) {}
+
+/* Mobile */
+@media (max-width:739px) {
+
+
+    #header {
+        overflow: hidden;
+    }
+
+    /* hidden icon search */
+    #header .search-icon {
+        display: none;
+    }
+
+    /* Custom menu mobile */
+    #header .menu-mobile-btn {
+        display: block;
+    }
+
+    #header .menu-mobile-btn:hover {
+        background: white;
+    }
+
+    #header .menu-mobile-btn:hover .menu-mobile-icon {
+        color: black;
+    }
+
+    /* menu mobile columns layout */
+    #nav {
+        display: block;
+        /* Có độ rộng các phần tử trong menu full màn hình để người dùng có thể thuận tiện click chọn vào menu items*/
+    }
+
+    #nav>li {
+        display: block;
+    }
+
+    /* Phần tử đầu tiên tỏng menu không cần phải có độ rộng full màn hình nên ta fix lại bằng với độ rộng nội dung tag a */
+    #nav>li:first-child,
+    #nav>li:first-child a {
+        display: inline-block;
+    }
+
+    #nav #subnav {
+        position: initial;
+        background: #333;
+    }
+
+    #nav #subnav li {
+        border-bottom: 1px solid #fff1;
+    }
+
+    #nav #subnav a {
+        color: #fff;
+        padding: 3px 35px;
+    }
+
+    /* The Band */
+    #content .member-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #content .membe-item {
+        width: 100%;
+    }
+
+    #content .item-heading {
+        margin-top: 30px;
+    }
+
+    #content .item-img {
+        width: 60%;
+    }
+
+    /* Tour Dates */
+    #content .place-item {
+        width: 100%;
+        padding: 8px;
+    }
+
+    #content .place-buy-btn {
+        width: 100%;
+        padding: 16px;
+    }
+
+    /* Contact */
+    #content .contact-container {
+        flex-direction: column;
+    }
+
+    #content .contact-form-row {
+        flex-direction: column;
+        row-gap: 8px;
+    }
+
+    #content .contact-col {
+        width: 100%;
+    }
+
+    #content form.contact-col {
+        margin-top: 10px;
+    }
+
+    #content .contact-submit-btn {
+        padding: 16px;
+    }
+
+}
